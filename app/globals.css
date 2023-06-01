@@ -136,6 +136,8 @@ table {
 .navbar {
   background: white;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .navbar a {
   margin-right: 10px;
@@ -152,4 +154,14 @@ table {
   color: black;
   padding: 20px;
   border-radius: 5px;
+}
+
+/* cart */
+
+.cart-item {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  margin: 20px auto;
+  margin-top: 50px;
 }

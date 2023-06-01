@@ -1,13 +1,22 @@
 export default () => {
+  const foods = [
+    { name: "Tomatoes", price: 40 },
+    { name: "Pasta", price: 50 },
+    { name: "Coconut", price: 30 },
+  ];
+
   return (
     <div>
       <h4 className="title">상품목록</h4>
-      <div className="food">
-        <h4>상품1 $40</h4>
-      </div>
-      <div className="food">
-        <h4>상품2 $50</h4>
-      </div>
+      {foods.map((food) => {
+        return (
+          <div className="food">
+            <h4>
+              {food.name} ${food.price}
+            </h4>
+          </div>
+        );
+      })}
     </div>
   );
 };
